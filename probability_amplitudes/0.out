@@ -1,0 +1,717 @@
+
+Running Job 1 of 1 0.in
+qchem 0.in_2942019.0 /scratch/ganymede2/shf230000/qchem_ru4qgram_job_6b0l3mir/qchem2942019/ 1
+/opt/ohpc/pub/apps/qchem/6.2.1/exe/qcprog.exe_s 0.in_2942019.0 /scratch/ganymede2/shf230000/qchem_ru4qgram_job_6b0l3mir/qchem2942019/
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 6.2, Q-Chem, Inc., Pleasanton, CA (2024)
+
+ License issued to: The University of Texas at Dallas (site)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. D. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  Huseyin Aksu,  B. Alam,  
+ B. Albrecht,  A. Aldossary,  E. Alguire,  J. H. Andersen,  
+ J. E. Arias-Martinez,  V. Athavale,  D. Barton,  K. Begam,  A. Behn,  
+ N. Bellonzi,  Y. A. Bernard,  E. J. Berquist,  H. Burton,  A. Carreras,  
+ K. Carter-Fenk,  Mathew Chow,  Romit Chakraborty,  Chandrima Chakravarty,  
+ Junhan Chen,  A. D. Chien,  K. D. Closser,  V. Cofer-Shabica,  L. Cunha,  
+ S. Dasgupta,  Jia Deng,  Joseph Dickinson,  M. de Wergifosse,  
+ M. Diedenhofen,  Hainam Do,  Wenjie Dou,  S. Ehlert,  Po-Tung Fang,  
+ S. Fatehi,  Qingguo Feng,  Jonathan Fetherolf,  T. Friedhoff,  
+ Thomas Froitzheim,  Sarai Folkestad,  B. Ganoe,  J. Gayvert,  Qinghui Ge,  
+ G. Gidofalvi,  M. Gimferrer,  M. Goldey,  Montgomery Gray,  J. Gomes,  
+ C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  J. A. Gyamfi,  
+ M. W. D. Hanson-Heine,  P. H. P. Harbach,  A. W. Hauser,  M. F. Herbst,  
+ M. Hernandez Vera,  M. Hodecker,  Z. C. Holden,  S. Houck,  Xunkun Huang,  
+ Kerwin Hui,  B. C. Huynh,  K. Ikeda,  M. Ivanov,  Nayanthara K. Jayadev,  
+ Hyunjun Ji,  Zuxin Jin,  Hanjie Jiang,  Subrata Jana,  B. Kaduk,  
+ S. Kaehler,  R. Kang,  K. Khistyaev,  Jaehoon Kim,  Yongbin Kim,  
+ P. Klunzinger,  Z. Koczor-Benda,  Joong Hoon Koh,  D. Kosenkov,  
+ Saikiran Kotaru,  L. Koulias,  T. Kowalczyk,  C. M. Krauter,  K. Kue,  
+ A. Kunitsa,  T. Kus,  A. Landau,  K. V. Lawler,  D. Lefrancois,  S. Lehtola,  
+ Rain Li,  Shaozhi Li,  Tao E. Li,  Yi-Pei Li,  Jiashu Liang,  M. Liebenthal,  
+ Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  Kuan-Yu Liu,  Xiao Liu,  
+ M. Loipersberger,  A. Luenser,  C. Malbon,  Aniket Mandal,  Manisha,  
+ A. Manjanath,  P. Manohar,  E. Mansoor,  S. F. Manzer,  Shan-Ping Mao,  
+ A. V. Marenich,  T. Markovich,  S. Mason,  F. Matz,  S. A. Maurer,  
+ Samuel May,  Alexandra McIsaac,  P. F. McLaughlin,  M. F. S. J. Menger,  
+ J.-M. Mewes,  S. A. Mewes,  P. Morgante,  Mohammad Mostafanejad,  
+ Madhubani Mukherjee,  J. W. Mullinax,  Quyen Nguyen,  Avik Kumar Ojha,  
+ K. J. Oosterbaan,  Eno Paenurk,  Xiaoliang Pan,  G. Paran,  V. Parravicini,  
+ Alexander C. Paul,  Suranjan K. Paul,  F. Pavosevic,  Zheng Pei,  S. Prager,  
+ E. I. Proynov,  E. Ramos,  B. Rana,  A. E. Rask,  A. Rettig,  R. M. Richard,  
+ F. Rob,  E. Rossomme,  T. Scheele,  M. Scheurer,  M. Schneider,  
+ P. E. Schneider,  Tim K. Schramm,  N. Sergueev,  S. M. Sharada,  
+ Hengyuan Shen,  W. Skomorowski,  D. W. Small,  C. J. Stein,  
+ Alistair J. Sterling,  Yingli Su,  Yu-Chuan Su,  E. J. Sundstrom,  
+ J. Talbot,  Zhen Tao,  J. Thirman,  Hung-Yi Tsai,  T. Tsuchimochi,  
+ N. M. Tubman,  C. Utku,  S. P. Veccham,  O. Vydrov,  Rahel Weiss,  
+ J. Wenzel,  Jonathan Wong,  J. Witte,  H. Wu,  Yanze Wu,  A. Yamada,  
+ Chou-Hsun Yang,  Kun Yao,  S. Yeganeh,  S. R. Yost,  Qi Yu,  A. Zech,  
+ F. Zeller,  Chongxiao Zhao,  Igor Ying Zhang,  Xing Zhang,  Yu Zhang,  
+ D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  N. A. Besley,  K. B. Bravaya,  
+ B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  Hsing-Ta Chen,  S. Coriani,  
+ C. J. Cramer,  A. E. DePrince, III,  R. A. DiStasio Jr.,  A. Dreuw,  
+ B. D. Dunietz,  T. R. Furlani,  W. A. Goddard III,  S. Grimme,  
+ S. Hammes-Schiffer,  T. Head-Gordon,  W. J. Hehre,  Chao-Ping Hsu,  
+ T.-C. Jagau,  Yousung Jung,  A. Klamt,  Jing Kong,  D. S. Lambrecht,  
+ Xiangyuan Li,  WanZhen Liang,  N. J. Mayhall,  C. W. McCurdy,  J. B. Neaton,  
+ T. Neudecker,  C. Ochsenfeld,  J. A. Parkhill,  R. Peverati,  
+ V. A. Rassolov,  Haisheng Ren,  Yihan Shao,  L. V. Slipchenko,  
+ R. P. Steele,  J. E. Subotnik,  A. J. W. Thom,  A. Tkatchenko,  
+ D. G. Truhlar,  T. Van Voorhis,  Fan Wang,  T. A. Wesolowski,  K. B. Whaley,  
+ H. L. Woodcock III,  P. M. Zimmerman,  S. Faraji,  P. M. W. Gill,  
+ M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  Arup K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+   Please cite Q-Chem as follows:
+  "Software for the frontiers of quantum chemistry:
+   An overview of developments in the Q-Chem 5 package"
+   J. Chem. Phys. 155, 084801 (2021)
+   https://doi.org/10.1063/5.0055522 (open access)
+
+ Q-Chem 6.2.1 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 9.900.5 (Nocturnal Misbehaviour).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Thu Jul 30 22:10:09 2026  
+
+ Host: 
+0
+
+     Scratch files written to /scratch/ganymede2/shf230000/qchem_ru4qgram_job_6b0l3mir/qchem2942019//
+ Sep124 |scratch|qcdevops|jenkins|workspace|build_RNUM -1
+ Processing $rem in /opt/ohpc/pub/apps/qchem/6.2.1/config/preferences:
+ Processing $rem in /home/shf230000/.qchemrc:
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+0 2
+H 0.0 0.0 -0.7552087201092559
+H 0.0 0.0 0.0
+H 0.0 0.0 2.4959842047537606
+
+$end
+$rem
+mem_total    6000
+job_type  sp
+CAS_METHOD                 2
+CAS_M_S     1
+MAX_SCF_CYCLES             500
+exchange hf
+CAS_N_ELEC 3
+CAS_N_ORB 3
+CAS_N_ROOTS                 1
+CAS_SOLVER                 1
+iqmol_fchk true
+
+SCF_ALGORITHM              DIIS_GDM
+basis aug-cc-pVTZ
+scf_print = 1
+point_group_symmetry = false
+integral_symmetry = false
+unrestricted    true
+INTERNAL_STABILITY      True
+INTERNAL_STABILITY_ITER 25
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000000000    -0.7552087201
+    2      H       0.0000000000     0.0000000000     0.0000000000
+    3      H       0.0000000000     0.0000000000     2.4959842048
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =           1.07547871 hartrees
+ There are        2 alpha and        1 beta electrons
+ Requested basis set is aug-cc-pVTZ
+ There are 27 shells and 69 basis functions
+
+ Total QAlloc Memory Limit   6000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+
+                       Distance Matrix (Angstroms)
+             H (  1)   H (  2)
+   H (  2)  0.755209
+   H (  3)  3.251193  2.495984
+ 
+ A cutoff of  1.0D-09 yielded    372 shell pairs
+ There are      2456 function pairs (      2915 Cartesian)
+ Smallest overlap matrix eigenvalue = 1.80E-05
+
+ Q-Chem warning in module stvman/mkSTV.C, line 305:
+
+ Overlap eigenvalue is smaller than square root of threshold
+ Use THRESH >= 12 to get rid of this warning
+
+
+ Scale SEOQF with 1.000000e+00/1.000000e+00/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000007 hartrees
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ SAD guess density has 3.000000 electrons
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+  Complete Active-Space and Truncated CI program by 
+  Daniel Levine, Alec White, Susi Lehtola
+ -----------------------------------------------------------------------
+Using mrci option set 2
+Option set summary: CASSCF.
+ Orthonormalizing orbitals
+ Alpha HF Exchange     Energy =  -0.59517903998206
+ Beta HF Exchange      Energy =  -0.27308648669243
+ Kinetic (alpha)       Energy =   0.91000594540375
+ Kinetic (beta)        Energy =   0.39801801610425
+ Nuclear Attr. (alpha) Energy =  -3.14912893529019
+ Nuclear Attr. (beta)  Energy =  -1.75471792849178
+ Total Coulomb         Energy =   1.80480032982868
+ Nuclear repulsion Energy =   1.07547871383400
+Printing hybrid method specification in gen_scfman_hybrid_algorithm
+algorithm ALGO_ID will be run until the gradient/residual is below 1E-ALGO_CONV
+or ALGO_ITER iterations have been performed
+----------------------------------------------
+  ALGO_ID        ALGO_CONV         ALGO_ITER
+----------------------------------------------
+  DIIS                    2           50
+  GDM                     5           500
+----------------------------------------------
+We will preform up to 25 macro iterations over saddle points until a stable solution is found
+Energy prior to optimization (guess energy) = -1.583809385286
+Begin Timing: Total SCF Calculation
+Begin Timing: SCF Single Stationary Point Calculation
+Begin Timing: Algorithm 1
+begin iterations for algorithm: DIIS         
+the SCF tolerance is set to 1.00e-02
+ Alpha HF Exchange     Energy =  -0.66743503536916
+ Beta HF Exchange      Energy =  -0.35525872623718
+ Kinetic (alpha)       Energy =   1.16331005766628
+ Kinetic (beta)        Energy =   0.66436417357680
+ Nuclear Attr. (alpha) Energy =  -3.48463075386411
+ Nuclear Attr. (beta)  Energy =  -2.11400557242787
+ Total Coulomb         Energy =   2.10430914484239
+ Nuclear repulsion Energy =   1.07547871383400
+    1      -1.5838093853      1.47e-02     00000 
+ Alpha HF Exchange     Energy =  -0.64171889193508
+ Beta HF Exchange      Energy =  -0.32790246116647
+ Kinetic (alpha)       Energy =   1.05983325719659
+ Kinetic (beta)        Energy =   0.55712002105377
+ Nuclear Attr. (alpha) Energy =  -3.36369472742621
+ Nuclear Attr. (beta)  Energy =  -1.98787375607170
+ Total Coulomb         Energy =   1.99698402585324
+ Nuclear repulsion Energy =   1.07547871383400
+    2      -1.6138679980      1.10e-02     00000 
+    3      -1.6317738187      7.50e-04     Intermediate Algorithm Converged
+successfully completed hybrid algorithm stage: 1
+Timing for Algorithm DIIS          : 0.00s (wall), 0.27s (cpu)
+Begin Timing: Algorithm 2
+begin iterations for algorithm: GDM          
+the SCF tolerance is set to 1.00e-05
+
+  ------------------- Entering Geometric Direct Minimization ------------------
+  GDM::    effective_thresh = 1.00e-09
+  GDM::project_to_ew_ss: input subspace size is       1
+  GDM::project_to_ew_ss: working subspace size set to 1
+  GDM::project_to_ew_ss: # of linearly dependent vectors = 0
+  GDM::get_qn_step_ss:   lowest Hinv e-value  1.00e+00
+  GDM::get_qn_step_ss:   highest Hinv e-value 1.00e+00
+  GDM::      : max scaling in preconditioner is       1.69e+00
+  GDM::      : max rotation in step is      1.70e-02
+  GDM::        e_cur = -2.71e+00
+  GDM::        g_ref = -1.72e-02
+  GDM::        ref_len = 2.11e-02
+  GDM::        grad.step = -3.63e-04
+ Alpha HF Exchange     Energy =  -0.64102012848957
+ Beta HF Exchange      Energy =  -0.32687381407836
+ Kinetic (alpha)       Energy =   1.05909653384081
+ Kinetic (beta)        Energy =   0.55483148345353
+ Nuclear Attr. (alpha) Energy =  -3.36234965219558
+ Nuclear Attr. (beta)  Energy =  -1.98440453688714
+ Total Coulomb         Energy =   1.99337183986974
+ Nuclear repulsion Energy =   1.07547871383400
+  ------- Leaving GDM -- hopefully with a step in  the right direction! --------
+
+    1      -1.6317738187      1.00e-02     00000  Normal BFGS step
+
+  ------------------- Entering Geometric Direct Minimization ------------------
+  GDM::    effective_thresh = 1.00e-09
+  GDM::trust_radius : no trust updates 
+  GDM::project_to_ew_ss: input subspace size is       2
+  GDM::project_to_ew_ss: working subspace size set to 2
+  GDM::project_to_ew_ss: # of linearly dependent vectors = 0
+  GDM::get_qn_step_ss:   lowest Hinv e-value  4.51e-01
+  GDM::get_qn_step_ss:   highest Hinv e-value 1.51e+00
+  GDM::      : max scaling in preconditioner is       1.69e+00
+  GDM::      : max rotation in step is      1.30e-02
+  GDM::        e_cur = -2.71e+00
+  GDM::        g_ref = -1.08e-02
+  GDM::        ref_len = 1.44e-02
+  GDM::        grad.step = -1.56e-04
+ Alpha HF Exchange     Energy =  -0.64083945118437
+ Beta HF Exchange      Energy =  -0.32637464908526
+ Kinetic (alpha)       Energy =   1.05889997634966
+ Kinetic (beta)        Energy =   0.55372267359822
+ Nuclear Attr. (alpha) Energy =  -3.36173489909650
+ Nuclear Attr. (beta)  Energy =  -1.98272110278923
+ Total Coulomb         Energy =   1.99164743287853
+ Nuclear repulsion Energy =   1.07547871383400
+  ------- Leaving GDM -- hopefully with a step in  the right direction! --------
+
+    2      -1.6318695607      1.54e-02     00000  Normal BFGS step
+
+  ------------------- Entering Geometric Direct Minimization ------------------
+  GDM::    effective_thresh = 1.00e-09
+  GDM::trust_radius : no trust updates 
+  GDM::project_to_ew_ss: input subspace size is       3
+  GDM::project_to_ew_ss: working subspace size set to 3
+  GDM::project_to_ew_ss: # of linearly dependent vectors = 0
+  GDM::get_qn_step_ss:   lowest Hinv e-value  3.89e-01
+  GDM::get_qn_step_ss:   highest Hinv e-value 1.30e+00
+  GDM::      : max scaling in preconditioner is       1.69e+00
+  GDM::      : max rotation in step is      3.09e-03
+  GDM::        e_cur = -2.71e+00
+  GDM::        g_ref = -5.46e-03
+  GDM::        ref_len = 4.77e-03
+  GDM::        grad.step = -2.61e-05
+ Alpha HF Exchange     Energy =  -0.64092845794036
+ Beta HF Exchange      Energy =  -0.32650904654562
+ Kinetic (alpha)       Energy =   1.05885407195868
+ Kinetic (beta)        Energy =   0.55399546384561
+ Nuclear Attr. (alpha) Energy =  -3.36167494922435
+ Nuclear Attr. (beta)  Energy =  -1.98316358915090
+ Total Coulomb         Energy =   1.99201595011809
+ Nuclear repulsion Energy =   1.07547871383400
+  ------- Leaving GDM -- hopefully with a step in  the right direction! --------
+
+    3      -1.6319213055      4.72e-03     00000  Normal BFGS step
+
+  ------------------- Entering Geometric Direct Minimization ------------------
+  GDM::    effective_thresh = 1.00e-09
+  GDM::trust_radius : no trust updates 
+  GDM::project_to_ew_ss: input subspace size is       4
+  GDM::project_to_ew_ss: working subspace size set to 4
+  GDM::project_to_ew_ss: # of linearly dependent vectors = 1
+  GDM::get_qn_step_ss:   lowest Hinv e-value  4.12e-01
+  GDM::get_qn_step_ss:   highest Hinv e-value 1.34e+00
+  GDM::      : max scaling in preconditioner is       1.69e+00
+  GDM::      : max rotation in step is      1.39e-03
+  GDM::        e_cur = -2.71e+00
+  GDM::        g_ref = -1.28e-03
+  GDM::        ref_len = 1.86e-03
+  GDM::        grad.step = -2.38e-06
+ Alpha HF Exchange     Energy =  -0.64086689101965
+ Beta HF Exchange      Energy =  -0.32650989075354
+ Kinetic (alpha)       Energy =   1.05872104990088
+ Kinetic (beta)        Energy =   0.55399345981305
+ Nuclear Attr. (alpha) Energy =  -3.36154807528251
+ Nuclear Attr. (beta)  Energy =  -1.98315578805711
+ Total Coulomb         Energy =   1.99195492095824
+ Nuclear repulsion Energy =   1.07547871383400
+  ------- Leaving GDM -- hopefully with a step in  the right direction! --------
+
+    4      -1.6319318431      1.14e-03     00000  Normal BFGS step
+
+  ------------------- Entering Geometric Direct Minimization ------------------
+  GDM::    effective_thresh = 1.00e-09
+  GDM::trust_radius : no trust updates 
+  GDM::project_to_ew_ss: input subspace size is       5
+  GDM::project_to_ew_ss: working subspace size set to 5
+  GDM::project_to_ew_ss: # of linearly dependent vectors = 2
+  GDM::get_qn_step_ss:   lowest Hinv e-value  4.14e-01
+  GDM::get_qn_step_ss:   highest Hinv e-value 1.33e+00
+  GDM::      : max scaling in preconditioner is       1.69e+00
+  GDM::      : max rotation in step is      6.81e-04
+  GDM::        e_cur = -2.71e+00
+  GDM::        g_ref = -6.80e-04
+  GDM::        ref_len = 8.31e-04
+  GDM::        grad.step = -5.65e-07
+ Alpha HF Exchange     Energy =  -0.64087696602387
+ Beta HF Exchange      Energy =  -0.32649653466448
+ Kinetic (alpha)       Energy =   1.05875653430277
+ Kinetic (beta)        Energy =   0.55396443307070
+ Nuclear Attr. (alpha) Energy =  -3.36160105569274
+ Nuclear Attr. (beta)  Energy =  -1.98310891369341
+ Total Coulomb         Energy =   1.99195105668214
+ Nuclear repulsion Energy =   1.07547871383400
+  ------- Leaving GDM -- hopefully with a step in  the right direction! --------
+
+    5      -1.6319325006      8.08e-04     00000  Normal BFGS step
+
+  ------------------- Entering Geometric Direct Minimization ------------------
+  GDM::    effective_thresh = 1.00e-09
+  GDM::trust_radius : no trust updates 
+  GDM::project_to_ew_ss: input subspace size is       6
+  GDM::project_to_ew_ss: working subspace size set to 6
+  GDM::project_to_ew_ss: # of linearly dependent vectors = 3
+  GDM::get_qn_step_ss:   lowest Hinv e-value  4.15e-01
+  GDM::get_qn_step_ss:   highest Hinv e-value 1.29e+00
+  GDM::      : max scaling in preconditioner is       1.69e+00
+  GDM::      : max rotation in step is      1.01e-04
+  GDM::        e_cur = -2.71e+00
+  GDM::        g_ref = -2.00e-04
+  GDM::        ref_len = 2.00e-04
+  GDM::        grad.step = -4.01e-08
+ Alpha HF Exchange     Energy =  -0.64087933788982
+ Beta HF Exchange      Energy =  -0.32649848847369
+ Kinetic (alpha)       Energy =   1.05875703231780
+ Kinetic (beta)        Energy =   0.55396883174726
+ Nuclear Attr. (alpha) Energy =  -3.36158945960890
+ Nuclear Attr. (beta)  Energy =  -1.98311605370270
+ Total Coulomb         Energy =   1.99194601370051
+ Nuclear repulsion Energy =   1.07547871383400
+  ------- Leaving GDM -- hopefully with a step in  the right direction! --------
+
+    6      -1.6319327322      1.10e-04     00000  Normal BFGS step
+
+  ------------------- Entering Geometric Direct Minimization ------------------
+  GDM::    effective_thresh = 1.00e-09
+  GDM::trust_radius : no trust updates 
+  GDM::project_to_ew_ss: input subspace size is       7
+  GDM::project_to_ew_ss: working subspace size set to 7
+  GDM::project_to_ew_ss: # of linearly dependent vectors = 4
+  GDM::get_qn_step_ss:   lowest Hinv e-value  4.12e-01
+  GDM::get_qn_step_ss:   highest Hinv e-value 1.31e+00
+  GDM::      : max scaling in preconditioner is       1.69e+00
+  GDM::      : max rotation in step is      4.24e-05
+  GDM::        e_cur = -2.71e+00
+  GDM::        g_ref = -5.05e-05
+  GDM::        ref_len = 5.29e-05
+  GDM::        grad.step = -2.67e-09
+ Alpha HF Exchange     Energy =  -0.64087957515289
+ Beta HF Exchange      Energy =  -0.32649899758076
+ Kinetic (alpha)       Energy =   1.05875727490722
+ Kinetic (beta)        Energy =   0.55396991436613
+ Nuclear Attr. (alpha) Energy =  -3.36159259246708
+ Nuclear Attr. (beta)  Energy =  -1.98311749292443
+ Total Coulomb         Energy =   1.99195000528076
+ Nuclear repulsion Energy =   1.07547871383400
+  ------- Leaving GDM -- hopefully with a step in  the right direction! --------
+
+    7      -1.6319327481      4.56e-05     00000  Normal BFGS step
+
+  ------------------- Entering Geometric Direct Minimization ------------------
+  GDM::    effective_thresh = 1.00e-09
+  GDM::trust_radius : no trust updates 
+  GDM::project_to_ew_ss: input subspace size is       8
+  GDM::project_to_ew_ss: working subspace size set to 8
+  GDM::project_to_ew_ss: # of linearly dependent vectors = 5
+  GDM::get_qn_step_ss:   lowest Hinv e-value  4.13e-01
+  GDM::get_qn_step_ss:   highest Hinv e-value 1.30e+00
+  GDM::      : max scaling in preconditioner is       1.69e+00
+  GDM::      : max rotation in step is      9.94e-06
+  GDM::        e_cur = -2.71e+00
+  GDM::        g_ref = -1.49e-05
+  GDM::        ref_len = 1.79e-05
+  GDM::        grad.step = -2.67e-10
+ Alpha HF Exchange     Energy =  -0.64087846048968
+ Beta HF Exchange      Energy =  -0.32649888051230
+ Kinetic (alpha)       Energy =   1.05875519480096
+ Kinetic (beta)        Energy =   0.55396963916504
+ Nuclear Attr. (alpha) Energy =  -3.36159042378861
+ Nuclear Attr. (beta)  Energy =  -1.98311695716571
+ Total Coulomb         Energy =   1.99194842484113
+ Nuclear repulsion Energy =   1.07547871383400
+  ------- Leaving GDM -- hopefully with a step in  the right direction! --------
+
+    8      -1.6319327497      1.12e-05     00000  Normal BFGS step
+
+  ------------------- Entering Geometric Direct Minimization ------------------
+  GDM::    effective_thresh = 1.00e-09
+  GDM::trust_radius : no trust updates 
+  GDM::project_to_ew_ss: input subspace size is       9
+  GDM::project_to_ew_ss: working subspace size set to 9
+  GDM::project_to_ew_ss: # of linearly dependent vectors = 6
+  GDM::get_qn_step_ss:   lowest Hinv e-value  4.13e-01
+  GDM::get_qn_step_ss:   highest Hinv e-value 1.31e+00
+  GDM::      : max scaling in preconditioner is       1.69e+00
+  GDM::      : max rotation in step is      5.37e-06
+  GDM::        e_cur = -2.71e+00
+  GDM::        g_ref = -5.91e-06
+  GDM::        ref_len = 6.80e-06
+  GDM::        grad.step = -4.02e-11
+ Alpha HF Exchange     Energy =  -0.64087910136475
+ Beta HF Exchange      Energy =  -0.32649887679127
+ Kinetic (alpha)       Energy =   1.05875649025132
+ Kinetic (beta)        Energy =   0.55396964061000
+ Nuclear Attr. (alpha) Energy =  -3.36159158234134
+ Nuclear Attr. (beta)  Energy =  -1.98311695298515
+ Total Coulomb         Energy =   1.99194891861742
+ Nuclear repulsion Energy =   1.07547871383400
+  ------- Leaving GDM -- hopefully with a step in  the right direction! --------
+
+    9      -1.6319327502      5.64e-06     00000 Convergence criterion met
+Timing for Algorithm GDM           : 1.00s (wall), 1.12s (cpu)
+Timing for Single Stationary Point: 1.00s (wall), 1.38s (cpu)
+Begin Timing: Stability
+===================================================
+Beginning Test for Internal Stability
+===================================================
+generating davidson guess vectors based on koopmans-like excitations
+    1      9.93e-02     00000 Davidson Iteration
+    2      7.05e-02     00000 Davidson Iteration
+    3      6.19e-02     00000 Davidson Iteration
+    4      3.64e-02     00000 Davidson Iteration
+    5      2.55e-02     00000 Davidson Iteration
+    6      5.90e-03     00000 Davidson Iteration
+    7      8.14e-04     00000 Davidson Iteration
+    8      4.65e-04     00000 Davidson Iteration
+    9      1.01e-04     00000 Davidson Iteration
+   10      1.04e-05     00000 Davidson Converged
+converged_eigenvalues
+   0.7534
+   0.8082
+Threshold for negative eigenvalues: -1.0e-05
+solution was a local minimum (stable)
+===================================================
+End Test for Internal Stability
+===================================================
+Timing for Internal Stability: 1.00s (wall), 2.00s (cpu)
+Our SCF solution is stable!
+The disked orbital energies are calculated using alpha and beta Focks
+Timing for Total SCF: 2.00s (wall), 3.39s (cpu)
+<S^2> =          0.750000000
+ Alpha HF Exchange     Energy =  -0.64087910136475
+ Beta HF Exchange      Energy =  -0.32649887679127
+ Kinetic (alpha)       Energy =   1.05875649025132
+ Kinetic (beta)        Energy =   0.55396964061000
+ Nuclear Attr. (alpha) Energy =  -3.36159158234134
+ Nuclear Attr. (beta)  Energy =  -1.98311695298515
+ Total Coulomb         Energy =   1.99194891861742
+ Nuclear repulsion Energy =   1.07547871383400
+The disked orbital energies are calculated using alpha and beta Focks
+Building Core-Active Integrals...done (0.000 seconds)
+Building Active-Active Integrals...done (0.000 seconds)
+
+=====Beginning CAS-SCF=====
+CAS-SCF setup:
+ Number of Inactive Core Orbitals:  0
+ Number of Active Alpha Electrons:  2
+ Number of Active Beta Electrons:   1
+ Number of Active Orbitals:         3
+ Number of Inactive Virtuals:       66
+ Number of Determinants:            9
+
+----- memory usage summary ----- 
+ Strings:            144.0 b
+ Data:                 2.4 kb
+ MO-tran             349.3 kb
+ 1 CI vector:         72.0 b
+ Total memory        352.0 kb
+
+Davidson guess is CISD from HF solution
+n sing doubl 8
+Davidson guess made
+      1      4.47e-03     00000 Davidson Iteration
+      2      1.75e-04     00000 Davidson Iteration
+      3      6.81e-06     00000 Davidson Converged
+Energy prior to optimization (guess energy) = -1.631947308406
+Begin Timing: Total SCF Calculation
+begin iterations for algorithm: GDM_LS       
+the SCF tolerance is set to 1.00e-05
+GDM subspace size: 20
+Davidson guess is coeffs from previous iteration
+      3      2.19e-06     00000 Davidson Converged
+    1      -1.6319473084      1.98e-05     00000 Preconditoned Steepest Descent
+Davidson guess is coeffs from previous iteration
+      3      9.30e-06     00000 Davidson Converged
+    2      -1.6319559024      2.93e-05     00000 LineSearch Step
+Davidson guess is coeffs from previous iteration
+      4      2.24e-06     00000 Davidson Converged
+    3      -1.6319863981      6.30e-05     00000 LineSearch Step
+Davidson guess is coeffs from previous iteration
+      5      4.85e-07     00000 Davidson Converged
+    4      -1.6321367563      2.24e-04     00000 LineSearch Step
+Fro norm of D 1.153497950838e+00
+transformation scaled by 2
+Davidson guess is coeffs from previous iteration
+      5      1.14e-06     00000 Davidson Converged
+    5      -1.6330932923      1.03e-03     00000 LineSearch Step
+Fro norm of D 1.488384452694e+00
+transformation scaled by 2
+Davidson guess is coeffs from previous iteration
+      5      7.63e-07     00000 Davidson Converged
+    6      -1.6377201034      2.59e-03     00000 LineSearch Step
+H information not updated because curvature violated
+Davidson guess is coeffs from previous iteration
+      5      5.95e-07     00000 Davidson Converged
+    7      -1.6401156553      2.65e-03     00000 Steepest Descent step
+Davidson guess is coeffs from previous iteration
+      4      4.88e-06     00000 Davidson Converged
+    8      -1.6346593441      3.30e-02     00000 LineSearch Step
+Davidson guess is coeffs from previous iteration
+      4      5.35e-06     00000 Davidson Converged
+    9      -1.6401858843      2.35e-03     00000 BFGS Step
+Fro norm of D 1.148502847502e+00
+transformation scaled by 2
+Davidson guess is coeffs from previous iteration
+      5      1.78e-06     00000 Davidson Converged
+   10      -1.6431499749      1.78e-03     00000 BFGS Step
+Davidson guess is coeffs from previous iteration
+      4      9.50e-06     00000 Davidson Converged
+   11      -1.6430614881      5.93e-03     00000 LineSearch Step
+Davidson guess is coeffs from previous iteration
+      4      5.67e-06     00000 Davidson Converged
+   12      -1.6452576778      3.04e-03     00000 BFGS Step
+Davidson guess is coeffs from previous iteration
+      5      2.78e-06     00000 Davidson Converged
+   13      -1.6478528933      3.16e-03     00000 BFGS Step
+Davidson guess is coeffs from previous iteration
+      5      1.35e-06     00000 Davidson Converged
+   14      -1.6486634140      5.17e-03     00000 BFGS Step
+Davidson guess is coeffs from previous iteration
+      4      3.23e-06     00000 Davidson Converged
+   15      -1.6505278650      2.25e-03     00000 BFGS Step
+Davidson guess is coeffs from previous iteration
+      4      1.17e-06     00000 Davidson Converged
+   16      -1.6507073688      9.03e-04     00000 BFGS Step
+Davidson guess is coeffs from previous iteration
+      3      5.42e-06     00000 Davidson Converged
+   17      -1.6507553838      3.05e-04     00000 BFGS Step
+Davidson guess is coeffs from previous iteration
+      3      1.12e-06     00000 Davidson Converged
+   18      -1.6507574880      1.57e-04     00000 BFGS Step
+Davidson guess is coeffs from previous iteration
+      3      1.32e-06     00000 Davidson Converged
+   19      -1.6507579587      8.31e-05     00000 BFGS Step
+Davidson guess is coeffs from previous iteration
+      1      6.73e-06     00000 Davidson Converged
+   20      -1.6507580662      2.72e-05     00000 BFGS Step
+   21      -1.6507580784      6.09e-06     00000 Convergence criterion met
+Timing for Total SCF: 6.00s (wall), 12.42s (cpu)
+ ===================================================================
+ Theory           State:          Energy (au) (kcal/mol)       <S2>
+ -------------------------------------------------------------------
+ CAS-SCF              1:        -1.6507580784     0.0000     0.7500
+ ===================================================================
+
+==== Natural orbital occupation numbers (NOONs): ====
+     NO 1: 1.975      (active)
+     NO 2: 1.000      (active)
+     NO 3: 0.025      (active)
+==== Kinetic energy decomposition by natural orbital ====
+     NO 1: 1.1120883
+     NO 2: 0.5048095
+     NO 3: 0.0361991
+
+Total kinetic energy from NOs: 1.6530970
+Number of electrons: 3.0000000
+ 
+ --------------------------------------------------------------
+ 
+               CASSCF Natural Occupation Numbers
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+  1.9750   1.0000
+ -- Virtual --
+  0.0250   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000
+ 
+ Beta MOs
+ -- Occupied --
+  1.9750
+ -- Virtual --
+  1.0000   0.0250   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+  0.0000   0.0000   0.0000   0.0000
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)    Spin (a.u.)
+  --------------------------------------------------------
+      1 H                     0.084135       0.000000
+      2 H                    -0.070902       0.000000
+      3 H                    -0.013233       0.000000
+  --------------------------------------------------------
+  Sum of atomic charges =     0.000000
+  Sum of spin   charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X      -0.0000      Y       0.0000      Z       0.0065
+       Tot       0.0065
+    Quadrupole Moments (Debye-Ang)
+        XX      -3.3873     XY       0.0000     YY      -3.3873
+        XZ      -0.0000     YZ       0.0000     ZZ      -2.8126
+    Octopole Moments (Debye-Ang^2)
+       XXX      -0.0000    XXY       0.0000    XYY      -0.0000
+       YYY       0.0000    XXZ      -2.5699    XYZ       0.0000
+       YYZ      -2.5699    XZZ      -0.0000    YZZ       0.0000
+       ZZZ      -8.4089
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX      -3.6736   XXXY       0.0000   XXYY      -1.2245
+      XYYY       0.0000   YYYY      -3.6736   XXXZ       0.0000
+      XXYZ       0.0000   XYYZ       0.0000   YYYZ       0.0000
+      XXZZ     -10.0391   XYZZ       0.0000   YYZZ     -10.0391
+      XZZZ      -0.0000   YZZZ       0.0000   ZZZZ     -55.8599
+ -----------------------------------------------------------------
+ Total job time:  9.87s(wall), 17.20s(cpu) 
+ Thu Jul 30 22:10:19 2026
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+
