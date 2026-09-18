@@ -1,0 +1,1 @@
+# Critical-role-of-Pauli-exclusion-in-the-collinear-ce-H2-ce-H-.-atom-transfer-reaction-Data-and-plots
