@@ -1,0 +1,56 @@
+$molecule
+0 2
+H 0.0 0.0 -0.7552610773285676
+H 0.0 0.0 0.0
+H 0.0 0.0 2.4129852708876736
+$end
+$rem
+mem_total    6000
+job_type  sp
+CAS_METHOD                 2
+exchange hf
+cas_n_elec          3
+cas_n_orb 3
+cas_m_s 1
+cas_n_roots 1
+CAS_SOLVER                 1
+
+basis aug-cc-pVTZ
+scf_print = 1
+point_group_symmetry = false
+integral_symmetry = false
+unrestricted    true
+SCF_ALGORITHM  DIIS_GDM
+INTERNAL_STABILITY      True
+INTERNAL_STABILITY_ITER 25
+
+$end
+
+@@@
+$molecule
++1 1
+read
+$end
+$rem
+mem_total    6000
+job_type  sp
+CAS_METHOD                 1
+CAS_M_S     0
+exchange hf
+scf_guess          read
+CAS_N_ELEC 2
+CAS_N_ORB 3
+ CAS_N_ROOTS                 1
+CAS_SOLVER                 0
+
+gen_scfman     True
+max_scf_cycles   0
+scf_convergence  1
+basis aug-cc-pVTZ
+scf_print = 1
+point_group_symmetry = false
+unrestricted    true
+integral_symmetry = false
+SCF_ALGORITHM  DIIS
+$end
+

@@ -1,0 +1,29 @@
+$molecule
+0 2
+H 0.0 0.0 -1.9199999999999806
+H 0.0 0.0 0.0
+H 0.0 0.0 2.2050000000000063
+$end
+$rem
+mem_total    6000
+job_type = sp
+CAS_METHOD                 2
+CAS_M_S     1
+MAX_SCF_CYCLES             500
+exchange hf
+CAS_N_ELEC 3
+CAS_N_ORB 3
+ CAS_N_ROOTS                 1
+CAS_SOLVER                 0
+
+
+SCF_ALGORITHM              DIIS_GDM
+basis aug-cc-pVTZ
+scf_print = 1
+point_group_symmetry = false
+integral_symmetry = false
+unrestricted     True
+INTERNAL_STABILITY      True
+INTERNAL_STABILITY_ITER 10
+$end
+

@@ -1,0 +1,21 @@
+$molecule
+0 2
+H 0.0 0.0 -0.6
+H 0.0 0.0 0.0
+H 0.0 0.0 2.960000000000001
+
+$end
+$rem
+method      wB97M-V
+basis aug-cc-pVTZ
+job_type  sp
+scf_print = 1
+SCF_ALGORITHM              DIIS_GDM
+MAX_SCF_CYCLES             500
+point_group_symmetry = false
+integral_symmetry = false
+INTERNAL_STABILITY      True
+INTERNAL_STABILITY_ITER 25
+unrestricted    true
+$end
+
