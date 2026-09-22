@@ -68,8 +68,8 @@ def stacked_2x1():
     xs_int = np.arange(min(xs),max(xs),0.00001)
     xt_int = np.arange(min(xt),max(xt),0.00001)
     ax2.set_xlabel(r'$r_1-r_2\,/\,\mathrm{\AA}$', labelpad=12, fontsize=20)
-    ax2.set_ylabel(r'$\Delta$E$\,/\,$kJ$\,$mol$^{-1}$', labelpad=12, fontsize=20)
-    ax1.set_ylabel(r'$\Delta$T$\,/\,$kJ$\,$mol$^{-1}$', labelpad=12, fontsize=20)
+    ax2.set_ylabel(r'${\Delta}E\,/\,$kJ$\,$mol$^{-1}$', labelpad=12, fontsize=20)
+    ax1.set_ylabel(r'${\Delta}T\,/\,$kJ$\,$mol$^{-1}$', labelpad=12, fontsize=20)
 
     ax1.plot(xt_int,interp_tk(xt_int), '--', label='Triplet',color='red', lw=1.2)
     ax1.plot(xd_int,interp_dk(xd_int), '--', label='Doublet',color='blue', lw=1.2)
@@ -212,13 +212,13 @@ def eda():
         ax1.plot(diff[i:j],cumulative1[i:j], color=palette[3], linestyle='--', lw=1.2,label=r'${\Delta}E_\mathrm{FRZ}+{\Delta}E_\mathrm{POL}$')
         ax1.plot(diff[i:j],cumulative2[i:j], color=palette[4], linestyle=(0,(8,6)), lw=1.2,label=r'${\Delta}E_\mathrm{FRZ}+{\Delta}E_\mathrm{POL}+{\Delta}E_\mathrm{CT}$')
         ax1.plot(diff[i:j],strain_E[i:j], color='navy', linestyle=(0, (4, 6, 8, 3)), lw=1.8,label=r'${\Delta}E_\mathrm{GD}$')
-        ax1.plot(diff[i:j],k_E[i:j], color='k', linestyle='-', lw=1.8,label=r'$\Delta$T')
+        ax1.plot(diff[i:j],k_E[i:j], color='k', linestyle='-', lw=1.8,label=r'${\Delta}T$')
         print(f'Kinetic energy max point calculated at x={diff[i:j][np.argwhere(k_E[i:j]==max(k_E[i:j]))]}')
         ax1.axvline(diff[i:j][np.argwhere(k_E[i:j]==max(k_E[i:j]))],ymin=0.15,linestyle=(0,(5,2)),color='k',lw=0.8)
-        ax1.text(diff[i:j][np.argwhere(k_E[i:j]==max(k_E[i:j]))][0][0]+0.01,84,r'$\frac{dT}{d\mathbf{R}}=0$',fontsize=14)
+        ax1.text(diff[i:j][np.argwhere(k_E[i:j]==max(k_E[i:j]))][0][0]+0.01,150,r'$\frac{dT}{d\mathbf{R}}=0$',fontsize=20)
         if KE_grad_SW_id:
             ax1.axvline(diff[i:j][KE_grad_SW_id],ymin=0.15,linestyle=(0,(5,2)),color='k',lw=0.8)
-            ax1.text(diff[i:j][KE_grad_SW_id]+0.01,95,r'$\frac{d^2T}{d\mathbf{R}^2}=0$',fontsize=14)
+            ax1.text(diff[i:j][KE_grad_SW_id]-0.4,95,r'$\frac{d^2T}{d\mathbf{R}^2}=0$',fontsize=20)
         ax1.axhline(0,linestyle='-',color='k',lw=0.8)
         ax1.set_ylabel(r'Energy change$\,/\,$kJ$\,$mol$^{-1}$',fontsize=20,labelpad=10)
         yformatter = FuncFormatter(lambda value, _: f'{value:.0f}')
@@ -288,8 +288,8 @@ def natorb():
         linstyles = ['-','--','dashdot']
 
         #Plot the overlay of normalized 1 electron orbital kinetic energies
-        fig, ((ax1),(ax2),(ax3)) = plt.subplots(3, 1, sharex='col',sharey='row',figsize=(8,15),dpi=300,
-        gridspec_kw={'height_ratios':[0.5,1,1]})
+        fig, ((ax1),(ax2),(ax3)) = plt.subplots(3, 1, sharex='col',sharey='row',figsize=(8,12),dpi=300,
+        gridspec_kw={'height_ratios':[0.5,0.7,1]})
         for i,key in enumerate(orbitals):
             ax2.plot(x,orb_ke_1e[key]*factor-ref[i]*factor, color='k',label=fr'$\phi_{i+1}$', linestyle=linstyles[i], lw=1.2)
         ax2.set_ylabel(r'${\Delta}\langle\phi_i\vert\hat{T}\vert\phi_i\rangle\,/\,$kJ$\,$mol$^{-1}$',fontsize=20,labelpad=10)
@@ -297,15 +297,17 @@ def natorb():
         ax2.yaxis.set_major_formatter(yformatter)
         ax2.tick_params(labelsize=16)
         ax2.legend(fontsize=16)
+        ax2.yaxis.set_major_locator(ticker.MultipleLocator(150))
         totalKE = np.zeros_like(orb_ke[next(iter(orb_ke))])
         for i,key in enumerate(orbitals):
             totalKE = totalKE+orb_ke[key]-ref_OKE[i]
-            ax3.plot(x,orb_ke[key]*factor-ref_OKE[i]*factor, color='k',label=fr'T$_{i+1}={{\eta}}_{i+1}\langle\phi_{i+1}\vert\hat{{T}}\vert\phi_{i+1}\rangle$', linestyle=linstyles[i], lw=1.2)
-        ax3.plot(x,totalKE*factor, color='k',label=r'T$=\sum_{i=1}^{3}$T$_i$', linestyle=(0,(7,5,4,8)), lw=1.2)
+            ax3.plot(x,orb_ke[key]*factor-ref_OKE[i]*factor, color='k',label=fr'$T_{i+1}={{\eta}}_{i+1}\langle\phi_{i+1}\vert\hat{{T}}\vert\phi_{i+1}\rangle$', linestyle=linstyles[i], lw=1.2)
+        ax3.plot(x,totalKE*factor, color='k',label=r'$T=\sum_{i=1}^{3}T_\mathrm{i}$', linestyle=(0,(7,5,4,8)), lw=1.2)
         ax3.set_xlabel(r'$r_1-r_2\,/\,\mathrm{\AA}$',fontsize=20)
-        ax3.set_ylabel(r'${\Delta}$T$_i\,/\,$kJ$\,$mol$^{-1}$',fontsize=20,labelpad=10)
+        ax3.set_ylabel(r'${\Delta}T_\mathrm{i}\,/\,$kJ$\,$mol$^{-1}$',fontsize=20,labelpad=10)
         yformatter = FuncFormatter(lambda value, _: f'{value:.0f}')
         ax3.yaxis.set_major_formatter(yformatter)
+        ax3.yaxis.set_major_locator(ticker.MultipleLocator(150))
         ax3.tick_params(labelsize=16)
         ax3.legend(fontsize=16)
         for i,key in enumerate(orbitals):
