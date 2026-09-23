@@ -404,6 +404,7 @@ def stacked_3x3_amp():
     x_mid_norm3 = np.linspace(-3.5,3.5,len(dictx['orb3']))
     x_mid_norm2 = np.linspace(-3.5,3.5,len(dictx['orb2']))
     x_mid_norm1 = np.linspace(-3.5,3.5,len(dictx['orb1']))
+
     ax3.plot(x_mid_norm3,dicty['orb1'], '-',color='k')
     ax2.plot(x_mid_norm2,dicty['orb2'],'-',color='k')
     ax1.plot(x_mid_norm1,dicty['orb3'],'-',color='k')
@@ -469,6 +470,7 @@ def stacked_3x3_amp():
     atom_pos_1 = [-0.7676677342171011,0.0,1.4811879649283832]
     atom_pos_2 = [-0.956683,0.0,0.956718]
 
+
     for plt_no,ax in enumerate(axes):
         if plt_no > 5:
             for pos in atom_pos_2:
@@ -498,15 +500,16 @@ def stacked_3x3_amp():
             ax.yaxis.set_major_locator(ticker.MultipleLocator(0.2))
             ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
 
-    #ax1.text(-3.5,0.3,r'$T=1.448\,$Ha',fontsize=15)
-    ax2.text(-3.5,0.3,r'$T=0.563\,$',fontsize=20)
-    ax3.text(-3.6,0.3,r'$T=0.505\,$',fontsize=20)
-    #ax4.text(-3.5,0.3,r'$T=1.517\,$Ha',fontsize=15)
-    ax5.text(-3.5,0.3,r'$T=0.556\,$',fontsize=20)
-    ax6.text(-3.6,0.3,r'$T=0.549\,$',fontsize=20)
-    #ax7.text(-3.5,0.3,r'$T=1.419\,$Ha',fontsize=15)
-    ax8.text(-3.5,0.3,r'$T=0.627\,$',fontsize=20)
-    ax9.text(-3.6,0.3,r'$T=0.479\,$',fontsize=20)
+    ax1.text(-3.8,0.3,r'$\mathbf{T=1.448}$',fontsize=25)
+    ax2.text(-3.5,0.3,r'$\mathbf{T=0.505}$',fontsize=25)
+    ax3.text(0.8,0.12,r'$\mathbf{T=0.563}$',fontsize=25)
+    ax4.text(-3.8,0.3,r'$\mathbf{T=1.517}$',fontsize=25)
+    ax5.text(-3.5,0.3,r'$\mathbf{T=0.558}$',fontsize=25)
+    ax6.text(-4.2,0.4,r'$\mathbf{T=0.547}$',fontsize=25)
+    ax7.text(-3.8,0.3,r'$\mathbf{T=1.419}$',fontsize=25)
+    ax8.text(-3.5,0.3,r'$\mathbf{T=0.627}$',fontsize=25)
+    ax9.text(-3.7,0.35,r'$\mathbf{T=0.479}$',fontsize=25)
+
     ax1.set_title(r'$r_1-r_2=−1.74\,\mathrm{\AA}$',pad=14,fontsize=24)
     ax4.set_title(r'$r_1-r_2=−0.71\,\mathrm{\AA}$',pad=14,fontsize=24)
     ax7.set_title(r'$r_1-r_2=0.0\,\mathrm{\AA}$',pad=14,fontsize=24)
